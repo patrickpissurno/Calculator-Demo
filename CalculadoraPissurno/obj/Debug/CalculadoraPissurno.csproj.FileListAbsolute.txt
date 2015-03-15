@@ -16,3 +16,15 @@ E:\CalculadoraPissurno\CalculadoraPissurno\obj\Debug\CalculadoraPissurno.Propert
 E:\CalculadoraPissurno\CalculadoraPissurno\obj\Debug\CalculadoraPissurno.csproj.GenerateResource.Cache
 E:\CalculadoraPissurno\CalculadoraPissurno\obj\Debug\CalculadoraPissurno.exe
 E:\CalculadoraPissurno\CalculadoraPissurno\obj\Debug\CalculadoraPissurno.pdb
+C:\Users\patrick.pissurno\Desktop\Calculator-Demo-master\CalculadoraPissurno\bin\Debug\CalculadoraPissurno.exe.config
+C:\Users\patrick.pissurno\Desktop\Calculator-Demo-master\CalculadoraPissurno\obj\Debug\CalculadoraPissurno.exe
+C:\Users\patrick.pissurno\Desktop\Calculator-Demo-master\CalculadoraPissurno\obj\Debug\CalculadoraPissurno.pdb
+C:\Users\patrick.pissurno\Desktop\Calculator-Demo-master\CalculadoraPissurno\bin\Debug\CalculadoraPissurno.exe
+C:\Users\patrick.pissurno\Desktop\Calculator-Demo-master\CalculadoraPissurno\bin\Debug\CalculadoraPissurno.pdb
+C:\Users\patrick.pissurno\Desktop\Calculator-Demo-master\CalculadoraPissurno\obj\Debug\CalculadoraPissurno.csprojResolveAssemblyReference.cache
+C:\Users\patrick.pissurno\Desktop\Calculator-Demo-master\CalculadoraPissurno\obj\Debug\CalculadoraPissurno.JanelaPrincipal.resources
+C:\Users\patrick.pissurno\Desktop\Calculator-Demo-master\CalculadoraPissurno\obj\Debug\CalculadoraPissurno.Properties.Resources.resources
+C:\Users\patrick.pissurno\Desktop\Calculator-Demo-master\CalculadoraPissurno\obj\Debug\CalculadoraPissurno.csproj.GenerateResource.Cache
+E:\Calculator-Demo-master\CalculadoraPissurno\bin\Debug\CalculadoraPissurno.exe.config
+E:\Calculator-Demo-master\CalculadoraPissurno\obj\Debug\CalculadoraPissurno.exe
+E:\Calculator-Demo-master\CalculadoraPissurno\obj\Debug\CalculadoraPissurno.pdb

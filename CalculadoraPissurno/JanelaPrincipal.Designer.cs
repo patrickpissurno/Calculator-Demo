@@ -54,6 +54,10 @@
             this.resto = new System.Windows.Forms.Button();
             this.tg = new System.Windows.Forms.Button();
             this.limpar = new System.Windows.Forms.Button();
+            this.fibonnaciR = new System.Windows.Forms.Button();
+            this.fibonacciI = new System.Windows.Forms.Button();
+            this.fatorialIterativo = new System.Windows.Forms.Button();
+            this.fatorialRecursivo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -62,7 +66,7 @@
             this.textBox1.MaxLength = 25;
             this.textBox1.Name = "textBox1";
             this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox1.Size = new System.Drawing.Size(260, 20);
+            this.textBox1.Size = new System.Drawing.Size(298, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -70,7 +74,7 @@
             // equalButton
             // 
             this.equalButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.equalButton.Location = new System.Drawing.Point(240, 76);
+            this.equalButton.Location = new System.Drawing.Point(239, 76);
             this.equalButton.Name = "equalButton";
             this.equalButton.Size = new System.Drawing.Size(32, 108);
             this.equalButton.TabIndex = 1;
@@ -246,7 +250,7 @@
             // cos
             // 
             this.cos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cos.Location = new System.Drawing.Point(202, 76);
+            this.cos.Location = new System.Drawing.Point(201, 76);
             this.cos.Name = "cos";
             this.cos.Size = new System.Drawing.Size(32, 32);
             this.cos.TabIndex = 20;
@@ -257,7 +261,7 @@
             // sen
             // 
             this.sen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sen.Location = new System.Drawing.Point(202, 38);
+            this.sen.Location = new System.Drawing.Point(201, 38);
             this.sen.Name = "sen";
             this.sen.Size = new System.Drawing.Size(32, 32);
             this.sen.TabIndex = 19;
@@ -268,7 +272,7 @@
             // potencia
             // 
             this.potencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.potencia.Location = new System.Drawing.Point(164, 76);
+            this.potencia.Location = new System.Drawing.Point(163, 76);
             this.potencia.Name = "potencia";
             this.potencia.Size = new System.Drawing.Size(32, 32);
             this.potencia.TabIndex = 18;
@@ -279,7 +283,7 @@
             // raiz
             // 
             this.raiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.raiz.Location = new System.Drawing.Point(164, 38);
+            this.raiz.Location = new System.Drawing.Point(163, 38);
             this.raiz.Name = "raiz";
             this.raiz.Size = new System.Drawing.Size(32, 32);
             this.raiz.TabIndex = 17;
@@ -290,7 +294,7 @@
             // porcentagem
             // 
             this.porcentagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.porcentagem.Location = new System.Drawing.Point(164, 114);
+            this.porcentagem.Location = new System.Drawing.Point(163, 114);
             this.porcentagem.Name = "porcentagem";
             this.porcentagem.Size = new System.Drawing.Size(32, 32);
             this.porcentagem.TabIndex = 23;
@@ -301,7 +305,7 @@
             // resto
             // 
             this.resto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resto.Location = new System.Drawing.Point(164, 152);
+            this.resto.Location = new System.Drawing.Point(163, 152);
             this.resto.Name = "resto";
             this.resto.Size = new System.Drawing.Size(70, 32);
             this.resto.TabIndex = 22;
@@ -312,7 +316,7 @@
             // tg
             // 
             this.tg.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tg.Location = new System.Drawing.Point(202, 114);
+            this.tg.Location = new System.Drawing.Point(201, 114);
             this.tg.Name = "tg";
             this.tg.Size = new System.Drawing.Size(32, 32);
             this.tg.TabIndex = 21;
@@ -323,7 +327,7 @@
             // limpar
             // 
             this.limpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.limpar.Location = new System.Drawing.Point(240, 38);
+            this.limpar.Location = new System.Drawing.Point(239, 38);
             this.limpar.Name = "limpar";
             this.limpar.Size = new System.Drawing.Size(32, 32);
             this.limpar.TabIndex = 24;
@@ -331,11 +335,59 @@
             this.limpar.UseVisualStyleBackColor = true;
             this.limpar.Click += new System.EventHandler(this.limpar_Click);
             // 
+            // fibonnaciR
+            // 
+            this.fibonnaciR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fibonnaciR.Location = new System.Drawing.Point(277, 76);
+            this.fibonnaciR.Name = "fibonnaciR";
+            this.fibonnaciR.Size = new System.Drawing.Size(32, 32);
+            this.fibonnaciR.TabIndex = 25;
+            this.fibonnaciR.Text = "FiR";
+            this.fibonnaciR.UseVisualStyleBackColor = true;
+            this.fibonnaciR.Click += new System.EventHandler(this.fibonacciRecursivo_Click);
+            // 
+            // fibonacciI
+            // 
+            this.fibonacciI.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fibonacciI.Location = new System.Drawing.Point(277, 38);
+            this.fibonacciI.Name = "fibonacciI";
+            this.fibonacciI.Size = new System.Drawing.Size(32, 32);
+            this.fibonacciI.TabIndex = 26;
+            this.fibonacciI.Text = "FiI";
+            this.fibonacciI.UseVisualStyleBackColor = true;
+            this.fibonacciI.Click += new System.EventHandler(this.fibonacciIterativo_Click);
+            // 
+            // fatorialIterativo
+            // 
+            this.fatorialIterativo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fatorialIterativo.Location = new System.Drawing.Point(276, 113);
+            this.fatorialIterativo.Name = "fatorialIterativo";
+            this.fatorialIterativo.Size = new System.Drawing.Size(32, 32);
+            this.fatorialIterativo.TabIndex = 28;
+            this.fatorialIterativo.Text = "FaI";
+            this.fatorialIterativo.UseVisualStyleBackColor = true;
+            this.fatorialIterativo.Click += new System.EventHandler(this.fatorialIterativo_Click);
+            // 
+            // fatorialRecursivo
+            // 
+            this.fatorialRecursivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F);
+            this.fatorialRecursivo.Location = new System.Drawing.Point(276, 151);
+            this.fatorialRecursivo.Name = "fatorialRecursivo";
+            this.fatorialRecursivo.Size = new System.Drawing.Size(32, 32);
+            this.fatorialRecursivo.TabIndex = 27;
+            this.fatorialRecursivo.Text = "FaR";
+            this.fatorialRecursivo.UseVisualStyleBackColor = true;
+            this.fatorialRecursivo.Click += new System.EventHandler(this.fatorialRecursivo_Click);
+            // 
             // JanelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 195);
+            this.ClientSize = new System.Drawing.Size(320, 195);
+            this.Controls.Add(this.fatorialIterativo);
+            this.Controls.Add(this.fatorialRecursivo);
+            this.Controls.Add(this.fibonacciI);
+            this.Controls.Add(this.fibonnaciR);
             this.Controls.Add(this.limpar);
             this.Controls.Add(this.porcentagem);
             this.Controls.Add(this.resto);
@@ -398,6 +450,10 @@
         private System.Windows.Forms.Button resto;
         private System.Windows.Forms.Button tg;
         private System.Windows.Forms.Button limpar;
+        private System.Windows.Forms.Button fibonnaciR;
+        private System.Windows.Forms.Button fibonacciI;
+        private System.Windows.Forms.Button fatorialIterativo;
+        private System.Windows.Forms.Button fatorialRecursivo;
     }
 }
 

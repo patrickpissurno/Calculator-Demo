@@ -169,6 +169,34 @@ namespace CalculadoraPissurno
             this.ProcessarResultado();
         }
 
+        private void fibonacciIterativo_Click(object sender, EventArgs e)
+        {
+            this.calculador.Operacao = "fibonacciIterativo";
+            this.limparNoProximoDigito = false;
+            this.ProcessarResultado();
+        }
+
+        private void fibonacciRecursivo_Click(object sender, EventArgs e)
+        {
+            this.calculador.Operacao = "fibonacciRecursivo";
+            this.limparNoProximoDigito = false;
+            this.ProcessarResultado();
+        }
+
+        private void fatorialIterativo_Click(object sender, EventArgs e)
+        {
+            this.calculador.Operacao = "fatorialIterativo";
+            this.limparNoProximoDigito = false;
+            this.ProcessarResultado();
+        }
+
+        private void fatorialRecursivo_Click(object sender, EventArgs e)
+        {
+            this.calculador.Operacao = "fatorialRecursivo";
+            this.limparNoProximoDigito = false;
+            this.ProcessarResultado();
+        }
+
         #endregion
 
         #region ProcessarResultado
@@ -224,6 +252,22 @@ namespace CalculadoraPissurno
 
                     case "tangente":
                         resultado = this.calculador.Tg();
+                        break;
+
+                    case "fibonacciIterativo":
+                        resultado = this.calculador.FibonacciIterativo();
+                        break;
+
+                    case "fibonacciRecursivo":
+                        resultado = this.calculador.FibonacciRecursivo();
+                        break;
+
+                    case "fatorialIterativo":
+                        resultado = this.calculador.FatorialIterativo();
+                        break;
+
+                    case "fatorialRecursivo":
+                        resultado = this.calculador.FatorialRecursivo();
                         break;
 
                     case "porcentagem":

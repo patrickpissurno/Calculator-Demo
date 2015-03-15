@@ -35,7 +35,8 @@ namespace CalculadoraPissurno
             {
                 if (value == "soma" || value == "subtracao" || value == "multiplicacao" || value == "divisao" || value == "potencia" ||
                     value == "raiz" || value == "seno" || value == "cosseno" || value == "tangente" || value == "resto" ||
-                    value == "porcentagem" || value == "none")
+                    value == "porcentagem" || value == "none" || value == "fibonacciIterativo" || value == "fibonacciRecursivo" ||
+                    value == "fatorialIterativo" || value == "fatorialRecursivo")
                     this.operacao = value;
             }
         }
@@ -97,6 +98,51 @@ namespace CalculadoraPissurno
         public float Resto(float numero)
         {
             return numero % this.valor;
+        }
+
+        public float FibonacciRecursivo(float numero = -1)
+        {
+            if (this.valor > 0)
+            {
+                if (numero == -1)
+                    numero = this.valor;
+                if (numero == 1 || numero == 2)
+                    return 1;
+                return this.FibonacciRecursivo(numero - 1) + this.FibonacciRecursivo(numero - 2);
+            }
+            else
+                return 0;
+        }
+
+        public float FibonacciIterativo()
+        {
+            if (this.valor < 1)
+                return 0;
+            float[] n = { 0, 1, 1};
+            for (int i = 0; i < this.valor - 1; i++)
+            {
+                n[2] = n[1];
+                n[1] = n[0] + n[1];
+                n[0] = n[2];
+            }
+            return n[1];
+        }
+
+        public float FatorialIterativo()
+        {
+            float result = 1;
+            for (int i = 2; i <= this.valor; i++)
+                result *= i;
+            return result;
+        }
+
+        public float FatorialRecursivo(float n = -1)
+        {
+            if (n == 0)
+                return 1;
+            else if (n == -1)
+                n = this.valor;
+            return n * FatorialRecursivo(n - 1);
         }
 
         #endregion
